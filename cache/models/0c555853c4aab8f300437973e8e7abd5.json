@@ -1,0 +1,37 @@
+{
+    "type": "PyTorchModel",
+    "config": {
+        "model_path": null,
+        "name": "supres",
+        "model_storage_kind": "folder",
+        "version": null,
+        "model_loader": "load_pytorch_model",
+        "model_script": "/home/davasquez/Olive/examples/dvDemoTest/super_resolution/loader.py",
+        "script_dir": null,
+        "io_config": {
+            "input_names": [
+                "input"
+            ],
+            "input_shapes": [
+                [
+                    1,
+                    1,
+                    224,
+                    224
+                ]
+            ],
+            "input_types": [
+                "float32"
+            ],
+            "output_names": [
+                "output"
+            ],
+            "output_shapes": null,
+            "output_types": null,
+            "dynamic_axes": null,
+            "string_to_int_dim_params": null
+        },
+        "dummy_inputs_func": null,
+        "hf_config": null
+    }
+}

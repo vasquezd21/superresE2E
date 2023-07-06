@@ -1,0 +1,13 @@
+{
+    "pass_name": "OnnxConversion",
+    "pass_config": {
+        "script_dir": null,
+        "user_script": null,
+        "target_opset": 15,
+        "save_as_external_data": false,
+        "all_tensors_to_one_file": true,
+        "external_data_name": null
+    },
+    "input_model_id": "0c555853c4aab8f300437973e8e7abd5",
+    "output_model_id": "0_OnnxConversion-0c555853c4aab8f300437973e8e7abd5-1ebc982a7cc7e43b3731b6c91d3b0cdd"
+}
