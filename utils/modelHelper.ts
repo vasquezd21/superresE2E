@@ -7,8 +7,8 @@ export async function runSuperResModel(preprocessedData: any): Promise<[any, num
   // Create session and set options. See the docs here for more options: 
   //https://onnxruntime.ai/docs/api/js/interfaces/InferenceSession.SessionOptions.html#graphOptimizationLevel
   const session = await ort.InferenceSession
-    .create('/chunks/pages/0_model.onnx',
-      { executionProviders: ['webgl'], graphOptimizationLevel: 'all' });
+    .create('./_next/static/chunks/pages/0_model.onnx',
+      { executionProviders: ['wasm'], graphOptimizationLevel: 'all' });
   console.log('Inference session created')
 
   // Run inference and get results.
