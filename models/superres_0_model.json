@@ -1,0 +1,12 @@
+{
+    "type": "ONNXModel",
+    "config": {
+        "model_path": "/home/davasquez/Olive/examples/dvDemoTest/super_resolution/models/superres_0_model.onnx",
+        "name": "supres",
+        "model_storage_kind": "file",
+        "version": null,
+        "inference_settings": null,
+        "use_ort_extensions": false,
+        "hf_config": null
+    }
+}

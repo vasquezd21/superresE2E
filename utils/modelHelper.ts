@@ -1,13 +1,12 @@
 import * as ort from 'onnxruntime-web';
 import _ from 'lodash';
-import { imagenetClasses } from '../data/imagenet';
 
-export async function runSuperResModel(preprocessedData: any): Promise<[any, number]> {
+export async function runSuperResModel(preprocessedData: any): Promise<[ort.Tensor, number]> {
 
   // Create session and set options. See the docs here for more options: 
   //https://onnxruntime.ai/docs/api/js/interfaces/InferenceSession.SessionOptions.html#graphOptimizationLevel
   const session = await ort.InferenceSession
-    .create('./_next/static/chunks/pages/0_model.onnx',
+    .create('./_next/static/chunks/pages/superres_0_model.onnx',
       { executionProviders: ['wasm'], graphOptimizationLevel: 'all' });
   console.log('Inference session created')
 

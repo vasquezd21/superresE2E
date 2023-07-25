@@ -6,7 +6,7 @@
         "model_storage_kind": "folder",
         "version": null,
         "model_loader": "load_pytorch_model",
-        "model_script": "/home/davasquez/Olive/examples/dvDemoTest/super_resolution/loader.py",
+        "model_script": "/home/davasquez/Olive/examples/dvDemoTest/super_resolution/oliveloader.py",
         "script_dir": null,
         "io_config": {
             "input_names": [

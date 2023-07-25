@@ -5,7 +5,7 @@
         "config": {
             "name": "supres",
             "model_loader": "load_pytorch_model",
-            "model_script": "loader.py",
+            "model_script": "oliveloader.py",
             "io_config": {
                 "input_names": ["input"],
                 "input_shapes": [[1, 1, 224, 224]],
@@ -24,15 +24,6 @@
             "config": {
                 "target_opset": 15
             }
-        },
-        "prepost": {
-            "type": "AppendPrePostProcessingOps",
-            "config": {
-                "tool_command": "superresolution",
-                "tool_command_args": {
-                    "output_format": "png"
-                }
-            }
         }
     },
     "engine": {
@@ -40,6 +31,7 @@
         "target": "local_system",
         "clean_cache": true,
         "cache_dir": "cache",
-        "output_dir": "models"
+        "output_dir": "models",
+        "output_name": "superres"
     }
 }
