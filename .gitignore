@@ -18,10 +18,18 @@
 .DS_Store
 *.pem
 
+# Ignore Python compiled files
+__pycache__/
+*.py[cod]
+
+__pycache__/
+*.py[cod]
+
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn-error.log
 
 # local env files
 .env.local
@@ -30,7 +38,14 @@ yarn-error.log*
 .env.production.local   
 
 /node_modules/
+node_modules/
 /package-lock.json
 /.eslintrc.json
 /*.d.ts
+
+model/
+
+# Ignore cache
+cache/
+
 

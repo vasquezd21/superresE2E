@@ -179,6 +179,6 @@ From there, `submitInference` calls `runSuperResModel` which returns a promise t
   };
 ```
 
-### Wrapping Up
+### Closing
 This tutorial illustrates the capabilities of Olive and ONNX Runtime Web in enhancing the optimization and deployment of machine learning models. Leveraging Olive's capabilities, we are able to effectively streamline our models, ensuring they are as efficient  as possible. Coupling this with ONNX Runtime Web allows for an impressive end-to-end deployment directly within a web browser, simplifying the process and ensuring user accessability. 
 
